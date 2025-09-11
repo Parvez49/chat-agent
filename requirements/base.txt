@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlalchemy
+alembic
+python-dotenv
+pyjwt
+bcrypt
+python-multipart
+email-validator
+langchain
+langchain-community
+chromadb
+sentence-transformers
+
