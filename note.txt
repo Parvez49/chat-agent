@@ -1,0 +1,16 @@
+# ollama setup
+$ sudo systemctl status ollama
+# if stop
+$ sudo systemctl start ollama
+
+
+
+# run botebook
+$ python -m ipykernel install --user --name=jupyter_env --display-name "Python (jupyter_env)"
+$ jupyter notebook
+or
+$ jupyter lab
+
+# run fastapi
+$ export ENV=local
+$ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000

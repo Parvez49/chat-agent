@@ -1,0 +1,78 @@
+[
+  {
+    "query": "Who are you and what do you do?",
+    "answer": "I am your sourcing and manufacturing specialist, here to simplify apparel sourcing. I help you move from design concept to final shipment by connecting you with reliable factories, managing samples, ensuring quality, and providing transparency at every stage."
+  },
+  {
+    "query": "What kind of products can you source?",
+    "answer": "We specialize in sweaters, knitwear, and woven apparel, but we can also support categories like outerwear, activewear, and fashion accessories depending on your needs."
+  },
+  {
+    "query": "Can you handle small orders?",
+    "answer": "Yes, unlike traditional manufacturers, we accept small-to-medium order quantities to support emerging brands and testing new collections."
+  },
+  {
+    "query": "How do I start if I only have a design idea?",
+    "answer": "You can share sketches, tech packs, or even mood boards. Our design & sampling team will translate them into knitdowns, CADs, and samples. We also provide AI design assistance for faster development."
+  },
+  {
+    "query": "How many samples can I request before confirming production?",
+    "answer": "Typically, brands go through 2–3 rounds of samples. We allow iterative improvements until you are satisfied. "
+  },
+  {
+    "query": "How is pricing calculated?",
+    "answer": "Pricing is based on yarn/fabric cost, trims, labor (CM), and order volume. We provide transparent costing breakdowns so you understand exactly where your money goes."
+  },
+  {
+    "query": "Can you offer FOB and LDP pricing?",
+    "answer": "Yes, we can quote both FOB (Free on Board) and LDP (Landed Duty Paid) depending on your preference."
+  },
+  {
+    "query": "What are your typical lead times?",
+    "answer": "Development samples: 2–3 weeks. Bulk production: 60–90 days depending on complexity, material sourcing, and order size."
+  },
+  {
+    "query": "How much capacity can you handle per month?",
+    "answer": "Our partner factories collectively produce over 500,000 units per month, with flexibility to allocate capacity for both small and large brands."
+  },
+  {
+    "query": "How do you ensure quality?",
+    "answer": "We follow AQL (Acceptable Quality Level) standards and have in-line + final inspections. You will also receive digital QC reports with photos and defect analysis."
+  },
+  {
+    "query": "What happens if quality issues are found?",
+    "answer": "We proactively fix issues before shipment. If a defect is identified after shipping, we offer replacement or compensation depending on the contract."
+  },
+  {
+    "query": "Are your factories certified?",
+    "answer": "Yes, we work with factories that are BSCI, SEDEX, WRAP, OEKO-TEX, GRS, and Higg Index certified. We prioritize ethical and sustainable sourcing."
+  },
+  {
+    "query": "Do you support sustainable materials?",
+    "answer": "Yes, we can source organic cotton, recycled polyester, sustainable viscose, and other eco-friendly materials upon request."
+  },
+  {
+    "query": "How can I track my order?",
+    "answer": "You’ll have access to a digital order management dashboard showing live updates on sampling, production, QC, and shipping milestones."
+  },
+  {
+    "query": "Will I be informed about production delays?",
+    "answer": "Yes, you’ll receive immediate alerts if there are any risks to the timeline, along with proposed solutions."
+  },
+  {
+    "query": "What shipping terms do you support?",
+    "answer": "We support FOB, CIF, and LDP shipping. Our logistics team can help with freight forwarding and customs clearance if needed."
+  },
+  {
+    "query": "Do you offer dropshipping or direct-to-consumer fulfillment?",
+    "answer": "Yes, we can arrange dropshipping and warehouse fulfillment services, especially for smaller brands or online retailers."
+  },
+  {
+    "query": "What happens if raw material prices fluctuate?",
+    "answer": "We lock in material costs upon PO confirmation to minimize risk for you. For volatile markets, we recommend early booking."
+  },
+  {
+    "query": "How do you handle production delays?",
+    "answer": "We maintain buffer time in production schedules and can shift capacity between partner factories to meet deadlines."
+  }
+]
