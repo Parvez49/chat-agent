@@ -1,0 +1,45 @@
+# Core dependencies
+ollama>=0.3.0
+langchain>=0.1.0
+langchain-community>=0.0.20
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Vector DB and embeddings
+chromadb>=0.4.22
+sentence-transformers>=2.3.0
+
+# Async and utilities
+aiohttp>=3.9.0
+asyncio>=3.4.3
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# Data processing
+pandas>=2.1.0
+numpy>=1.24.0
+
+# Logging and monitoring
+loguru>=0.7.2
+tenacity>=8.2.3
+
+# Web and APIs
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+httpx>=0.26.0
+
+# Streamlit UI
+streamlit>=1.29.0
+plotly>=5.18.0
+streamlit-chat>=0.1.1
+
+# Development tools
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+black>=23.12.0
+ruff>=0.1.9
+
+# Optional: For advanced features
+# redis>=5.0.0  # For distributed memory
+# ray>=2.9.0    # For distributed agent execution

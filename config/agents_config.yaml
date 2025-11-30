@@ -1,0 +1,123 @@
+# Agent System Configuration
+
+agents:
+  coordinator:
+    name: "Coordinator"
+    model: "llama3.1:8b"
+    temperature: 0.3
+    max_tokens: 2000
+    system_prompt: |
+      You are a coordinator agent responsible for breaking down complex tasks into subtasks
+      and delegating them to specialized agents. Analyze the user's request, create a plan,
+      and coordinate multiple agents to solve the problem efficiently.
+    
+  researcher:
+    name: "Researcher"
+    model: "llama3.1:8b"
+    temperature: 0.5
+    max_tokens: 3000
+    system_prompt: |
+      You are a research agent specialized in gathering and analyzing information.
+      Your task is to find relevant data, synthesize information, and provide
+      comprehensive research reports with citations and sources.
+    tools:
+      - web_search
+      - document_retrieval
+      - summarization
+  
+  analyst:
+    name: "Analyst"
+    model: "llama3.1:8b"
+    temperature: 0.2
+    max_tokens: 2500
+    system_prompt: |
+      You are an analytical agent specialized in data analysis and critical thinking.
+      Evaluate information, identify patterns, perform calculations, and provide
+      insights based on evidence and logical reasoning.
+    tools:
+      - calculator
+      - data_analysis
+      - visualization
+  
+  coder:
+    name: "Coder"
+    model: "codellama:13b"
+    temperature: 0.1
+    max_tokens: 4000
+    system_prompt: |
+      You are a coding agent specialized in software development and code analysis.
+      Write clean, efficient, and well-documented code. Review code for issues,
+      suggest improvements, and implement solutions following best practices.
+    tools:
+      - code_execution
+      - file_operations
+      - code_search
+  
+  writer:
+    name: "Writer"
+    model: "llama3.1:8b"
+    temperature: 0.7
+    max_tokens: 3000
+    system_prompt: |
+      You are a content creation agent specialized in writing clear, engaging content.
+      Create well-structured documents, reports, and communications tailored to
+      the audience and purpose.
+    tools:
+      - document_generation
+      - summarization
+
+# Orchestration Settings
+orchestration:
+  pattern: "hierarchical"  # Options: hierarchical, collaborative, sequential
+  max_iterations: 10
+  timeout: 300
+  enable_feedback_loop: true
+  
+# Memory Configuration
+memory:
+  short_term:
+    type: "conversation_buffer"
+    max_messages: 20
+  
+  long_term:
+    type: "vector_store"
+    provider: "chromadb"
+    collection_name: "agent_memory"
+    similarity_threshold: 0.7
+    top_k: 5
+
+# Tool Configuration
+tools:
+  web_search:
+    enabled: false  # Requires API key
+    provider: "serper"  # Options: serper, brave
+  
+  code_execution:
+    enabled: true
+    timeout: 30
+    allowed_languages:
+      - python
+      - javascript
+  
+  file_operations:
+    enabled: true
+    allowed_operations:
+      - read
+      - write
+      - list
+    base_directory: "./data/workspace"
+
+# Performance Settings
+performance:
+  enable_gpu: true
+  batch_size: 4
+  max_concurrent_tasks: 3
+  cache_responses: true
+  cache_ttl: 3600
+
+# Logging
+logging:
+  level: "INFO"
+  format: "json"
+  include_timestamps: true
+  log_agent_thoughts: true
