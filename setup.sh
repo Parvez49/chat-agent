@@ -36,17 +36,17 @@ fi
 # Create virtual environment
 echo ""
 echo "Creating virtual environment..."
-if [ -d "venv" ]; then
+if [ -d ".venv" ]; then
     echo "Virtual environment already exists"
 else
-    python3 -m venv venv
+    python3 -m venv .venv
     echo "✓ Virtual environment created"
 fi
 
 # Activate virtual environment
 echo ""
 echo "Activating virtual environment..."
-source venv/bin/activate
+source .venv/bin/activate
 
 # Upgrade pip
 echo ""
