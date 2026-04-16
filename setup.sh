@@ -96,7 +96,7 @@ fi
 # Run a simple test
 echo ""
 echo "Running simple test..."
-python examples/simple_agent.py
+PYTHONPATH=. python examples/simple_agent.py
 
 echo ""
 echo "=================================="
@@ -113,3 +113,7 @@ echo "- Setup Guide: docs/SETUP.md"
 echo "- Architecture: docs/ARCHITECTURE.md"
 echo "- Custom Agents: docs/CUSTOM_AGENTS.md"
 echo ""
+
+
+# PYTHONPATH=. streamlit run src/chatbot/app.py --server.port 8500
+# uvicorn src.api.main:app --reload --host 0.0.0.0 --port 8000
